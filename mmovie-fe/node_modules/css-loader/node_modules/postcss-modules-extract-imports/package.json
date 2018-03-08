@@ -1,0 +1,87 @@
+{
+  "name": "postcss-modules-extract-imports",
+  "version": "1.1.0",
+  "description": "A CSS Modules transform to extract local aliases for inline imports",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "build": "babel --out-dir lib src",
+    "watch": "chokidar src -c 'npm run build'",
+    "posttest": "npm run lint && npm run build",
+    "test": "mocha --compilers js:babel/register",
+    "autotest": "chokidar src test -c 'npm test'",
+    "precover": "npm run lint && npm run build",
+    "cover": "babel-istanbul cover node_modules/.bin/_mocha",
+    "travis": "npm run cover -- --report lcovonly",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/css-modules/postcss-modules-extract-imports.git"
+  },
+  "keywords": [
+    "css-modules",
+    "postcss",
+    "plugin"
+  ],
+  "files": [
+    "lib"
+  ],
+  "author": {
+    "name": "Glen Maddern"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/css-modules/postcss-modules-extract-imports/issues"
+  },
+  "homepage": "https://github.com/css-modules/postcss-modules-extract-imports",
+  "dependencies": {
+    "postcss": "^6.0.1"
+  },
+  "devDependencies": {
+    "babel": "^5.4.7",
+    "babel-eslint": "^7.2.2",
+    "babel-istanbul": "^0.4.0",
+    "babelify": "^7.3.0",
+    "chokidar-cli": "^1.0.1",
+    "codecov.io": "^0.1.2",
+    "coveralls": "^2.11.2",
+    "eslint": "^1.5.0",
+    "mocha": "^3.1.2"
+  },
+  "gitHead": "c2c40a2a4bccaad0545014ae312d48730b922a18",
+  "_id": "postcss-modules-extract-imports@1.1.0",
+  "_shasum": "b614c9720be6816eaee35fb3a5faa1dba6a05ddb",
+  "_from": "postcss-modules-extract-imports@>=1.0.0 <2.0.0",
+  "_npmVersion": "4.1.2",
+  "_nodeVersion": "7.6.0",
+  "_npmUser": {
+    "name": "geelen",
+    "email": "hi@glenmaddern.com"
+  },
+  "dist": {
+    "shasum": "b614c9720be6816eaee35fb3a5faa1dba6a05ddb",
+    "tarball": "https://registry.npmjs.org/postcss-modules-extract-imports/-/postcss-modules-extract-imports-1.1.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "geelen",
+      "email": "hi@glenmaddern.com"
+    },
+    {
+      "name": "markdalgleish",
+      "email": "mark.john.dalgleish@gmail.com"
+    },
+    {
+      "name": "sokra",
+      "email": "tobias.koppers@googlemail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/postcss-modules-extract-imports-1.1.0.tgz_1495407403404_0.6651193597353995"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/postcss-modules-extract-imports/-/postcss-modules-extract-imports-1.1.0.tgz",
+  "readme": "ERROR: No README data found!"
+}

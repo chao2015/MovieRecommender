@@ -5,7 +5,7 @@
       <parameters>
         <parameter value="-make:transitive" />
         <parameter value="-dependencyfile" />
-        <parameter value="E:\scala_develop\MyMovie\target/.scala_dependencies" />
+        <parameter value="$PROJECT_DIR$/target/.scala_dependencies" />
       </parameters>
     </profile>
   </component>

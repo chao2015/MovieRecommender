@@ -1,0 +1,57 @@
+{
+  "name": "es6-templates",
+  "version": "0.2.3",
+  "description": "ES6 template strings compiled to ES5.",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/esnext/es6-templates.git"
+  },
+  "dependencies": {
+    "recast": "~0.11.12",
+    "through": "~2.3.6"
+  },
+  "devDependencies": {
+    "example-runner": "~0.2.0"
+  },
+  "scripts": {
+    "test": "node test/runner.js"
+  },
+  "author": {
+    "name": "Square, Inc."
+  },
+  "license": "Apache 2",
+  "gitHead": "cd61e516c494f47a6a87380848497cc35822607a",
+  "bugs": {
+    "url": "https://github.com/esnext/es6-templates/issues"
+  },
+  "homepage": "https://github.com/esnext/es6-templates#readme",
+  "_id": "es6-templates@0.2.3",
+  "_shasum": "5cb9ac9fb1ded6eb1239342b81d792bbb4078ee4",
+  "_from": "es6-templates@>=0.2.2 <0.3.0",
+  "_npmVersion": "3.8.6",
+  "_nodeVersion": "5.12.0",
+  "_npmUser": {
+    "name": "eventualbuddha",
+    "email": "me@brian-donovan.com"
+  },
+  "dist": {
+    "shasum": "5cb9ac9fb1ded6eb1239342b81d792bbb4078ee4",
+    "tarball": "https://registry.npmjs.org/es6-templates/-/es6-templates-0.2.3.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "eventualbuddha",
+      "email": "me@brian-donovan.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/es6-templates-0.2.3.tgz_1472832970878_0.854157050838694"
+  },
+  "_resolved": "https://registry.npmjs.org/es6-templates/-/es6-templates-0.2.3.tgz",
+  "readme": "ERROR: No README data found!"
+}

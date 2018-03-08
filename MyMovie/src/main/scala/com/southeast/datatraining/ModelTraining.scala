@@ -106,7 +106,7 @@ object ModelTraining  extends AppConf{
     val test2 = testRDD.map { case Rating(userid, movieid, rating) => ((userid, movieid), rating) }
 
 
-    val model = ALS.train(ratingRDD, 1, 10, 0.01)
+    val model = ALS.train(ratingRDD, 1, 5, 0.01)
 
     val users = sqlContext.sql("select distinct(userId) from trainingData order by userId asc")
     val index = 139
