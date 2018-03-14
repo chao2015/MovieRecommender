@@ -1,10 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="utf-8">
-<link href="../css/index.css?1d4229f39177dca9ecf6" rel="stylesheet"></head>
-<body>
-<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <head> 
+        <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="keywords" content="异火电影">
+<meta name="description" content="diffire异火电影开发教程">
 
-<script type="text/javascript" src="../js/base.js?1d4229f39177dca9ecf6"></script><script type="text/javascript" src="../js/index.js?1d4229f39177dca9ecf6"></script></body>
+        <title>异火电影 - 最NB的电影网站</title>
+    <link href="/dist/css/common.css?b717441ae88f59e9fcb6" rel="stylesheet"><link href="/dist/css/index.css?b717441ae88f59e9fcb6" rel="stylesheet"></head>
+    <body>
+        <div class="nav">
+    <div class="w">
+        <div class="user-info">
+            <span class="user not-login">
+                <span class="link js-login">登录</span>
+                <span class="link js-register">注册</span>
+            </span>
+            <span class="user login">
+                <span class="link-text">
+                    欢迎，
+                    <span class="username"></span>
+                </span>
+                <span class="link js-logout">退出</span>
+            </span>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="link" href="./cart.html">
+                    <i class="fa fa-heart-o"></i>
+                    喜欢(<span class="cart-count">0</span>)
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./order-list.html">观影历史</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./user-center.html">个人中心</a>
+            </li>
+            <li class="nav-item">
+                <a class="link" href="./about.html">关于我们</a>
+            </li>
+        </ul>
+    </div>
+</div>
+        <div class="header">
+    <div class="w">
+        <a class="logo" href="./index.html">异火电影</a>
+        <div class="search-con">
+            <input class="search-input" id="search-input" placeholder="请输入电影名称"/>
+            <button class="btn search-btn" id="search-btn">搜索</button>
+        </div>
+    </div>
+</div>
+        <div class="w">
+            <ul class="keywords-list">
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=图书">热门</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=音像">最新</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=电子书">经典</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=鞋靴">普通话</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=箱包">粤语</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=钟表">英语</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=珠宝">小语种</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=母婴用品">内地</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=儿童玩具">港台</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=童装童鞋">欧美</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=手机">动作</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=数码">爱情</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=电视">科幻</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=电脑">剧情</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=办公配件">喜剧</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=空调">悬疑</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=冰箱">犯罪</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=洗衣机">恐怖</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=厨卫家电">青春</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=小家电">励志</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=家具">战争</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=家具">文艺</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=家装">传记</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=厨卫家电">情色</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=小家电">暴力</a>
+                </li>
+                <li class="keywords-item">
+                    <a class="link" target="_blank" href="./list.html?keyword=个护化妆">音乐</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=清洁用品">家庭</a>
+                    <a class="link" target="_blank" href="./list.html?keyword=纸品">伦理</a>
+                </li>
+            </ul>
+            <div class="banner-con">
+                <div class="loading"></div>
+            </div>
+        </div>
+        <div class="w">
+            <div class="floor-wrap">
+                <h1 class="floor-title">正在热映</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100006">
+                            <span class="floor-text">神秘巨星</span>
+                            <img class="floor-img" src="http://imgwx3.2345.com/dypcimg/img/4/65/sup197693_223x310.jpg" alt="神秘巨星" />       
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100007">
+                            <span class="floor-text">解忧杂货店</span>
+                            <img class="floor-img" src="http://imgwx2.2345.com/dypcimg/img/2/65/sup197135_223x310.jpg" alt="解忧杂货店" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100008">
+                            <span class="floor-text">蓝精灵：寻找神秘村</span>
+                            <img class="floor-img" src="http://imgwx5.2345.com/dypcimg/img/5/49/sup148842_223x310.jpg" alt="蓝精灵：寻找神秘村" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100009">
+                            <span class="floor-text">大唐嘻游记</span>
+                            <img class="floor-img" src="http://imgwx4.2345.com/dypcimg/img/0/65/sup196714_223x310.jpg" alt="大唐嘻游记" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100010">
+                            <span class="floor-text">血祭</span>
+                            <img class="floor-img" src="http://imgwx4.2345.com/dypcimg/img/2/65/sup197138_223x310.jpg" alt="血祭" />
+                        </a>
+                    </li>
+<div class="floor-ranking">
+    <span class="floor-text">热门电影排行</span>
+<ul class="tet">
+<li class="a"><a href="#"/>红海行动.</a></li>
+<li class="b"><a href="#"/>唐人街探案2</a></li>
+<li class="c"><a href="#"/>小萝莉的猴神大叔</a></li>
+<li class="d"><a href="#"/>厉害了，我的国</a></li>
+<li class="e"><a href="#"/>三块广告牌</a></li>
+<li class="f"><a href="#"/>妈妈咪呀</a></li>
+<li class="g"><a href="#"/>熊出没：变形记</a></li>
+<li class="h"><a href="#"/>黑豹</a></li>
+<li class="i"><a href="#"/>捉妖记2</a></li>
+<li class="j"><a href="#"/>西游记女儿国</a></li>
+</ul>
+</div>
+                </ul>
+            </div>
+            <div class="floor-wrap">
+                <h1 class="floor-title">爱情</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100011">
+                            <span class="floor-text">笔记本电脑</span>
+                            <img class="floor-img" src="/distresource/floor2-1.jpg" alt="笔记本电脑" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100012">
+                            <span class="floor-text">手机</span>
+                            <img class="floor-img" src="/distresource/floor2-2.jpg" alt="手机" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100013">
+                            <span class="floor-text">平板电脑</span>
+                            <img class="floor-img" src="/distresource/floor2-3.jpg" alt="平板电脑" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100014">
+                            <span class="floor-text">数码相机</span>
+                            <img class="floor-img" src="/distresource/floor2-4.jpg" alt="数码相机" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100015">
+                            <span class="floor-text">3C配件</span>
+                            <img class="floor-img" src="/distresource/floor2-5.jpg" alt="3C配件" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="floor-wrap">
+                <h1 class="floor-title">动作</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100016">
+                            <span class="floor-text">女装</span>
+                            <img class="floor-img" src="/distresource/floor3-1.jpg" alt="女装" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100017">
+                            <span class="floor-text">帽子专区</span>
+                            <img class="floor-img" src="/distresource/floor3-2.jpg" alt="帽子专区" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100018">
+                            <span class="floor-text">旅行箱</span>
+                            <img class="floor-img" src="/distresource/floor3-3.jpg" alt="旅行箱" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100019">
+                            <span class="floor-text">手提包</span>
+                            <img class="floor-img" src="/distresource/floor3-4.jpg" alt="手提包" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100020">
+                            <span class="floor-text">保暖内衣</span>
+                            <img class="floor-img" src="/distresource/floor3-5.jpg" alt="保暖内衣" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="floor-wrap">
+                <h1 class="floor-title">科幻</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100021">
+                            <span class="floor-text">最爱零食</span>
+                            <img class="floor-img" src="/distresource/floor4-1.jpg" alt="最爱零食" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100022">
+                            <span class="floor-text">生鲜</span>
+                            <img class="floor-img" src="/distresource/floor4-2.jpg" alt="生鲜" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100023">
+                            <span class="floor-text">半成品菜</span>
+                            <img class="floor-img" src="/distresource/floor4-3.jpg" alt="半成品菜" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100024">
+                            <span class="floor-text">速冻专区</span>
+                            <img class="floor-img" src="/distresource/floor4-4.jpg" alt="速冻专区" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100025">
+                            <span class="floor-text">进口牛奶</span>
+                            <img class="floor-img" src="/distresource/floor4-5.jpg" alt="进口牛奶" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="floor-wrap">
+                <h1 class="floor-title">喜剧</h1>
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100026">
+                            <span class="floor-text">白酒</span>
+                            <img class="floor-img" src="/distresource/floor5-1.jpg" alt="白酒" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100027">
+                            <span class="floor-text">红酒</span>
+                            <img class="floor-img" src="/distresource/floor5-2.jpg" alt="红酒" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100028">
+                            <span class="floor-text">饮料</span>
+                            <img class="floor-img" src="/distresource/floor5-3.jpg" alt="饮料" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100029">
+                            <span class="floor-text">调制鸡尾酒</span>
+                            <img class="floor-img" src="/distresource/floor5-4.jpg" alt="调制鸡尾酒" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100030">
+                            <span class="floor-text">进口洋酒</span>
+                            <img class="floor-img" src="/distresource/floor5-5.jpg" alt="进口洋酒" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+    <div class="w">
+        <div class="links">
+            <a class="link" href="http://localhost:8089/dist/view/index.html" target="_blank">异火影业</a> |
+            <a class="link" href="https://www.baidu.com" target="_blank">百度</a> |
+            <a class="link" href="https://www.taobao.com" target="_blank">淘宝</a> |
+            <a class="link" href="http://www.qq.com" target="_blank">腾讯</a>
+        </div>
+        <p class="copyright">
+            Copyright © 2018 异火电影.com All Right Reserved
+        </p>
+    </div>
+</div>
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js
+"></script>
+    <script type="text/javascript" src="/dist/js/base.js?b717441ae88f59e9fcb6"></script><script type="text/javascript" src="/dist/js/index.js?b717441ae88f59e9fcb6"></script></body>
 </html>

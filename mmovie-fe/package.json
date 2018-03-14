@@ -4,9 +4,10 @@
   "description": "前端代码",
   "main": "webpack.config.js",
   "scripts": {
-    "dev"  : "WEBPACK_ENV=dev webpack-dev-server --inline --port 8089",
-    "dist" : "WEBPACK_ENV=online webpack -p"
-
+    "dev": "WEBPACK_ENV=dev webpack-dev-server --inline --port 8089",
+        "dev_win": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8088",
+    "dist": "WEBPACK_ENV=online webpack -p",
+    "dist_win": "set WEBPACK_ENV=online && webpack -p"
   },
   "repository": {
     "type": "git",
@@ -31,5 +32,9 @@
     "url-loader": "^0.5.8",
     "webpack": "^1.15.0",
     "webpack-dev-server": "^1.16.5"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "hogan": "^1.0.2"
   }
 }

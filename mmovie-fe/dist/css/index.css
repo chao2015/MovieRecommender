@@ -1,10 +1,272 @@
 /*
 * @Author: chao2015
-* @Date:   2018-03-08 10:09:52
+* @Date:   2018-03-09 14:16:54
 * @Last Modified by:   chao2015
-* @Last Modified time: 2018-03-08 13:59:51
+* @Last Modified time: 2018-03-09 15:25:49
+*/
+.nav{
+    background: #eee;
+    height: 30px;
+    line-height: 30px;   
+}
+/* 用户部分 */
+.nav .user{
+    float: left;
+}
+.nav .user.login{
+    display: none;
+}
+.nav .user .link{
+    margin-right: 5px;
+}
+/* 导航链接部分 */
+.nav .nav-list{
+    float: right;
+}
+.nav .nav-list .nav-item{
+    display: inline-block;
+    margin-left: 5px;
+}
+/*
+* @Author: chao2015
+* @Date:   2017-05-18 19:30:20
+* @Last Modified by:   chao2015
+* @Last Modified time: 2018-03-09 15:25:17
+*/
+/* 通用头部导航 */
+.header .logo{
+    position: absolute;
+    left: 60px;
+    top: 34px;
+    display: block;
+    font-size: 36px;
+    color: #c60023;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header .search-con{
+    padding: 40px 0 30px 250px;
+}
+.header .search-con .search-input{
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: 2px solid #c60023;
+    outline: none;
+}
+.header .search-con .search-btn{
+    position: absolute;
+    height: 44px;
+    width: 80px;
+}
+
+/* 面包屑导航 */
+.crumb{
+    margin-bottom: 15px;
+    height: 50px;
+    line-height: 50px;
+    background: #eee;
+    color: #888;
+    font-size: 14px;
+    border-top: 2px solid #c60023;
+}/*
+* @Author: chao2015
+* @Date:   2018-03-09 17:16:19
+* @Last Modified by:   chao2015
+* @Last Modified time: 2018-03-11 18:30:12
 */
 
-body{
-    background: url(resource/2.png);
+/* keywords-list */
+.keywords-list{
+    float: left;
+    width: 240px;
+    height: 350px;
+    padding: 10px 0;
+    margin-right: 10px;
+    background: #666;
+    color: #fff;
+}
+.keywords-list .keywords-item{
+    padding-left: 10px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+}
+.keywords-list .keywords-item:hover{
+    background: #999;
+}
+.keywords-list .keywords-item .link{
+    margin-right: 6px;
+    color: #fff;
+}
+.keywords-list .keywords-item .link:hover{
+    color: #c60023;
+}
+
+/* banner-con */
+.banner-con{
+    width: 830px;
+    float: left;
+    height: 370px;
+    background: #eee;
+}
+.banner-con .loading{
+    margin-top: 150px;
+}
+.banner-con .banner-img{
+    width: 100%;
+    height: 370px;
+}
+/* banner的前一张和后一张按钮 */
+.banner-con .banner-arrow{
+    position: absolute; 
+    top:160px;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    background: #ccc;
+    background: rgba(0,0,0,.2);
+    cursor: pointer;
+}
+.banner-con .banner-arrow:hover{
+    background: #aaa;
+    background: rgba(0,0,0,.5);
+}
+.banner-con .banner-arrow.prev{
+    left: 0;
+}
+.banner-con .banner-arrow.next{
+    right: 0;
+}
+/* floor */
+.floor-wrap .floor-title{
+    height: 50px;
+    line-height: 50px;
+    color: #d58717;
+    font-weight: normal;
+    font-size: 20px;
+    border-bottom: 1px solid #d58717;
+}
+/* 更改各楼层标题颜色 */
+.floor-wrap:nth-child(2) .floor-title{
+    color: #3b838c;
+    border-bottom: 1px solid #3b838c;
+}
+.floor-wrap:nth-child(3) .floor-title{
+    color: #a93931;
+    border-bottom: 1px solid #a93931;
+}
+.floor-wrap:nth-child(4) .floor-title{
+    color: #488bad;
+    border-bottom: 1px solid #488bad;
+}
+.floor-wrap:nth-child(5) .floor-title{
+    color: #642663;
+    border-bottom: 1px solid #642663;
+}
+.floor-wrap .floor-list{
+    margin-right: -20px;
+    overflow: hidden;
+}
+.floor-wrap .floor-list .floor-item{
+    position: relative;
+    width: 160px;
+    height: 220px;
+    margin: 15px 20px 15px 0;
+    float: left;
+    cursor: pointer;
+    background: #fff;
+}
+.floor-wrap .floor-list .floor-item:hover{
+    box-shadow: 1px 1px 7px #ddd;
+}
+.floor-wrap .floor-list .floor-item .floor-text{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #555;
+}
+.floor-wrap .floor-list .floor-item .floor-img{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 94%;
+    height: 80%;
+    border: none;
+}
+/*.floor-ranking *//*
+* @Author: chao2015
+* @Date:   2018-03-09 18:19:21
+* @Last Modified by:   chao2015
+* @Last Modified time: 2018-03-09 15:25:16
+*/
+/* banner */
+.banner{
+    position: relative; 
+    overflow: auto; 
+}
+.banner li { 
+    list-style: none; 
+}
+.banner ul li { 
+    float: left; 
+}
+/* 引导的小圆点 */
+.banner .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    text-align: center;
+}
+.banner .dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+.banner .dots li.active {
+    background: #fff;
+    opacity: 1;
+}/*
+* @Author: chao2015
+* @Date:   2018-03-09 17:39:34
+* @Last Modified by:   chao2015
+* @Last Modified time: 2018-03-09 15:29:01
+*/
+/* 导航主体 */
+.nav-side{
+    float: left;
+    width: 130px;
+    min-height: 100px;
+}
+.nav-side .nav-item{
+    line-height: 25px;
+    font-size: 13px;
+}
+.nav-side .nav-item .link{
+    color: #888;
+}
+.nav-side .nav-item.active .link{
+    color: #c60023;
+}
+/* 右侧内容区 */
+.content.with-nav{
+    float: left;
+    width: 950px;
 }

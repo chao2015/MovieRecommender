@@ -1,0 +1,44 @@
+<div class="intro-wrap">
+    <div class="p-img-con">
+        <div class="main-img-con">
+            <img class="main-img" src="{{mainImage}}" alt="{{name}}"/>
+        </div>
+    </div>
+    <div class="p-info-con">
+        <h1 class="p-name">{{name}}</h1>
+        <p class="p-subtitle">类型：{{subtitle}}</p>
+        <p class="p-subtitle">导演：{{detail}}</p>
+        <p class="p-subtitle">主演：{{subImages}}</p>
+        <p class="p-subtitle">上映时间：{{create_time}}</p>
+        <div class="p-info-item p-price-con">
+            <span class="label">评分:</span>
+            <span class="info">{{price}}</span>
+        </div>
+        <div class="p-info-item">
+            <span class="label">电影时长:</span>
+            <span class="info">{{stock}}</span>
+            <span class="info">分钟</span>
+        </div>
+        <div class="p-info-item p-count-con">
+            <span class="label">喜欢指数：</span>
+            <input class="p-count" value="1" readonly=""/>
+            <span class="p-count-btn plus">+</span>
+            <span class="p-count-btn minus">-</span>
+
+        </div>
+        <div class="p-info-item">
+            <a class="btn cart-add">播放 ▷</a>
+            <a class="btn cart-add">加入喜欢 ♡</a>
+        </div>
+    </div>
+</div>
+<div class="detail-wrap">
+    <div class="detail-tab-con">
+        <ul class="tab-list">
+            <li class="tab-item active">你可能会喜欢：</li>
+        </ul>
+    </div>
+    <div class="detail-con">
+        {{{}}}
+    </div>
+</div>

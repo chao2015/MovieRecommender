@@ -1,0 +1,27 @@
+/*
+* @Author: chao2015
+* @Date:   2018-03-09 17:39:34
+* @Last Modified by:   chao2015
+* @Last Modified time: 2018-03-09 15:29:01
+*/
+/* 导航主体 */
+.nav-side{
+    float: left;
+    width: 130px;
+    min-height: 100px;
+}
+.nav-side .nav-item{
+    line-height: 25px;
+    font-size: 13px;
+}
+.nav-side .nav-item .link{
+    color: #888;
+}
+.nav-side .nav-item.active .link{
+    color: #c60023;
+}
+/* 右侧内容区 */
+.content.with-nav{
+    float: left;
+    width: 950px;
+}

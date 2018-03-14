@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%= require('html-loader!./layout/head-common.html')  %>
+        <title><%= htmlWebpackPlugin.options.title%> - diffire异火电影</title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html')  %>
+        <%= require('html-loader!./layout/header.html')  %>
+        <div class="crumb">
+            <div class="w">
+                <div class="crumb-con">
+                    <a class="link" href="./index.html">异火电影</a>
+                    <span>></span>
+                    <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrap w">
+
+        
+        </div>
+        <div class="page-wrap2 w">
+            <div class="floor-wrap">
+                <ul class="floor-list">
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100006">
+                            <span class="floor-text">抢钱老兵</span>
+                            <img class="floor-img" src="http://imgwx2.2345.com/dypcimg/img/d/64/sup193636_223x310.jpg" alt="抢钱老兵" />       
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100007">
+                            <span class="floor-text">解忧杂货店</span>
+                            <img class="floor-img" src="http://imgwx2.2345.com/dypcimg/img/2/65/sup197135_223x310.jpg" alt="解忧杂货店" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100008">
+                            <span class="floor-text">蓝精灵：寻找神秘村</span>
+                            <img class="floor-img" src="http://imgwx5.2345.com/dypcimg/img/5/49/sup148842_223x310.jpg" alt="蓝精灵：寻找神秘村" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100009">
+                            <span class="floor-text">大唐嘻游记</span>
+                            <img class="floor-img" src="http://imgwx4.2345.com/dypcimg/img/0/65/sup196714_223x310.jpg" alt="大唐嘻游记" />
+                        </a>
+                    </li>
+                    <li class="floor-item">
+                        <a href="./list.html?categoryId=100010">
+                            <span class="floor-text">万能钥匙</span>
+                            <img class="floor-img" src="http://imgwx3.2345.com/dypcimg/img/9/17/sup53332_223x310.jpg" alt="万能钥匙" />
+                        </a>
+                    </li>
+        <%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>
